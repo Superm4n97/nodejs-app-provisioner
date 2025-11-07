@@ -1,8 +1,9 @@
 # nodejs-app-provisioner
-
-### architecture
-
-resource created
-
-- vpc
-- iam roles
+### Use
+- To deploy the architecture
+    ```bash
+    terraform apply
+    ```
+- Copy the Kubeconfig from output
+- Go to `nodejs-app` repository and create a secret naming `KUBECONFIG`
+- Paste the output kubeconfig as the secret value and save the secret
